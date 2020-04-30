@@ -24,6 +24,12 @@
     "node-binance-api": "^0.4.29",
     "node-emoji": "^1.8.1",
     "node-telegram-bot-api": "^0.30.0",
-    "shortid": "^2.2.8"
-  }
+    "shortid": "^2.2.8",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
